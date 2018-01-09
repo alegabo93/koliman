@@ -1,0 +1,96 @@
+// Color palette
+// - A
+$color-alto: #d3d3d3;
+// - B
+$color-black: #000;
+// - C
+$color-crown-of-thorns: #80202e;
+// - G
+$color-gray: #808080;
+// - M
+$color-mine-shaft: #212121;
+// - S
+$color-silver: #c0c0c0;
+// - W
+$color-white: #fff;
+
+
+// Base colors
+$color-primary: $color-crown-of-thorns;
+
+// Base font
+$font-family-base:    'Roboto', sans-serif;
+$secondary-font:      'Roboto Condensed', sans-serif;
+$font-awesome:        'FontAwesome';
+
+//** Global textual link color.
+$link-color:            $color-primary !default;
+//** Link hover color set via `darken()` function.
+$link-hover-color:      darken($link-color, 15%) !default;
+
+//== Buttons
+//
+//## For each of Bootstrap's buttons, define text, background and border color.
+
+$btn-default-color:              $color-white !default;
+$btn-default-bg:                 $color-black !default;
+$btn-default-border:             $color-black !default;
+
+$btn-info-color:              $color-black !default;
+$btn-info-bg:                 $color-white !default;
+$btn-info-border:             $color-white !default;
+
+
+$btn-border-radius-base:         0 !default;
+$btn-border-radius-large:        0 !default;
+$btn-border-radius-small:        0 !default;
+
+//== Components
+//
+//## Define common padding and border radius sizes and more. Values based on 14px text and 1.428 line-height (~20px to start).
+
+$padding-base-horizontal:   22px !default;
+
+//== Navbar
+//
+//##
+
+// Basics of a navbar
+$navbar-border-radius:                0 !default;
+$navbar-margin-bottom:                0 !default;
+
+$navbar-default-color:             #777 !default;
+$navbar-default-bg:                $color-primary !default;
+$navbar-default-border:            $navbar-default-bg !default;
+
+// Navbar links
+$navbar-default-link-color:                $color-white !default;
+$navbar-default-link-hover-color:          darken($color-white, 10%) !default;
+$navbar-default-link-hover-bg:             transparent !default;
+$navbar-default-link-active-color:         $color-white !default;
+$navbar-default-link-active-bg:            transparent !default;
+
+//== Forms
+//
+//##
+$input-border-radius:            0;
+$input-border-radius:            $input-border-radius !default;
+//** Large `.form-control` border radius
+$input-border-radius-large:      $input-border-radius !default;
+//** Small `.form-control` border radius
+$input-border-radius-small:      $input-border-radius !default;
+
+//== Type
+//
+//##
+//** Headings small color
+$headings-small-color:        $color-white !default;
+
+//== Container sizes
+//
+//** Padding between columns.
+$grid-gutter-width:         30px !default;
+// Width of `.container` for different screen sizes.
+// For `$screen-lg-min` and up.
+$container-large-desktop:      (1230px + $grid-gutter-width) !default;
+$container-lg:                 $container-large-desktop !default;

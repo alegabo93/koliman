@@ -1,0 +1,39 @@
+{
+  "name": "arvm",
+  "private": true,
+  "dependencies": {
+    "bootstrap-sass": "~3.3.5",
+    "modernizr": "~2.8.1",
+    "font-awesome": "^4.6.3",
+    "masonry": "^4.1.1",
+    "lightbox2": "^2.8.2",
+    "jquery-ui": "^1.12.1"
+  },
+  "overrides": {
+    "bootstrap-sass": {
+      "main": [
+        "assets/stylesheets/_bootstrap.scss",
+        "assets/javascripts/bootstrap.js"
+      ]
+    },
+    "font-awesome": {
+      "main": [
+        "scss/font-awesome.scss",
+        "fonts/*"
+      ]
+    },
+    "masonry": {
+      "main": [
+        "dist/masonry.pkgd.js"
+      ]
+    }
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.0.2",
+    "jquery-migrate-1.2.1.min": "http://code.jquery.com/jquery-migrate-1.2.1.min.js",
+    "slick-carousel": "^1.6.0",
+    "slick": "http://kenwheeler.github.io/slick/slick/slick.css",
+    "malihu-custom-scrollbar-plugin": "^3.1.5"
+  }
+}

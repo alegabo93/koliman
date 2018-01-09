@@ -1,0 +1,19 @@
+// bower:scss
+@import 'bower_components/font-awesome/scss/font-awesome';
+// endbower
+
+// Defaults
+@import './theme/variables';
+@import './theme/setup';
+@import './theme/navbar';
+
+// Utils
+@import './utils/font';
+
+// Layout
+@import './layout/footer';
+
+// Components
+
+// Pages
+@import './pages/home';

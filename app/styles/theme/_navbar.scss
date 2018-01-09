@@ -1,0 +1,41 @@
+.navbar-default {
+  .navbar-header {
+    padding: 10px 0;
+  }
+
+  .navbar {
+    &-brand {
+      width: 140px;
+      padding: 0;
+      margin-right: 40px;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    &-brand-centered {
+        position: absolute;
+        left: 50%;
+        display: block;
+        transform: translateX(-50%);
+    }
+
+    &-nav > li {
+      padding: 10px 0;
+
+      > a {
+        text-transform: uppercase;
+        color: $color-white;
+      }
+
+      &:hover {
+        background: $color-white;
+
+        > a {
+          color: $color-mine-shaft;
+        }
+      }
+    }
+  }
+}
