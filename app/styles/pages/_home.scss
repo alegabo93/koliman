@@ -1,1 +1,74 @@
-.home {}
+.home {
+  .mining {
+    background-image: url("../assets/img/general-bg.jpg");
+    background-size: cover;
+    background-position: center;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+  }
+
+  &-section {
+    min-height: calc(100vh - 70px);
+    padding: 40px 0;
+    padding-top: 70px;
+    position: relative;
+
+    &.-bg {
+      background-color: $color-white;
+    }
+  }
+
+  .carousel {
+    margin-top: 70px;
+
+    &-caption {
+      top: 50%;
+      transform: translateY(-50%);
+
+      h1 {
+        font-size: 50px;
+        text-transform: uppercase;
+      }
+    }
+
+    @media (max-width: $screen-sm-max) {
+      img { min-height: 250px; }
+      h1 { font-size: 30px; }
+    }
+  }
+
+  .identity {
+    .title {
+      margin: 25px 0;
+      color: $color-primary;
+    }
+
+    .description {
+      text-align: justify;
+    }
+
+    .graph-container {
+      margin-top: 50px;
+    }
+  }
+
+  .thumbnail {
+    background: $color-white;
+    margin: 10px 0;
+
+    .img-responsive {
+      width: 100%;
+      padding: 20px;
+      box-shadow: 0px 2px 10px $color-black;
+    }
+
+    .caption {
+      padding: 10px 20px;
+      border-top: 2px solid $color-primary;
+
+      h3 { color: $color-primary; }
+      .description { margin: 16px 0; }
+    }
+  }
+}

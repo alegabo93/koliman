@@ -1,41 +1,98 @@
-.navbar-default {
-  .navbar-header {
+.koliman-header {
+  .logocontainer {
+    background-image: url("../assets/img/header-pattern.jpg");
     padding: 10px 0;
+
+    .logo {
+      display: block;
+      width: 230px;
+      margin: 0 auto;
+    }
   }
 
-  .navbar {
-    &-brand {
-      width: 140px;
-      padding: 0;
-      margin-right: 40px;
+  .navbar-default {
+    background: $color-white;
+    border-top: 2px solid $color-primary;
+    border-bottom: 2px solid $color-primary;
+    margin: 0;
 
-      img {
-        width: 100%;
+    .navbar {
+      &-header { padding: 10px 0; }
+
+      &-brand {
+        width: 140px;
+        padding: 0;
+        margin-right: 40px;
+        img { width: 100%; }
       }
-    }
 
-    &-brand-centered {
-        position: absolute;
-        left: 50%;
+      &-nav {
         display: block;
-        transform: translateX(-50%);
-    }
+        float: none;
 
-    &-nav > li {
-      padding: 10px 0;
-
-      > a {
-        text-transform: uppercase;
-        color: $color-white;
-      }
-
-      &:hover {
-        background: $color-white;
-
-        > a {
+        > li > a {
+          text-transform: uppercase;
           color: $color-mine-shaft;
+          padding: 15px 30px;
+        }
+
+        @media (min-width: $screen-sm-min) {
+          width: fit-content;
+          margin: 0 auto;
         }
       }
+
+      &-nav > li:hover { background: $color-primary; }
+      &-nav > li:hover > a { color: $color-white; }
+    }
+  }
+}
+
+.home-header {
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+
+  .navbar-default {
+    background: $color-white;
+    margin: 0;
+    border: none;
+
+    .navbar {
+      &-header { padding: 10px 0; }
+
+      &-brand {
+        width: 140px;
+        padding: 0;
+        margin-right: 0;
+        margin-left: 0;
+        img { width: 100%; }
+      }
+
+      &-nav {
+        display: block;
+        float: none;
+
+        > li > a {
+          text-transform: uppercase;
+          color: $color-mine-shaft;
+          padding: 25px 30px;
+        }
+
+        @media (min-width: $screen-md-min) {
+          width: fit-content;
+          margin: 0 auto;
+        }
+
+        @media (max-width: $screen-sm-max) {
+          > li > a {
+            padding: 25px 20px;
+          }
+        }
+      }
+
+      &-nav > li:hover { background: $color-primary; }
+      &-nav > li:hover > a { color: $color-white; }
     }
   }
 }
